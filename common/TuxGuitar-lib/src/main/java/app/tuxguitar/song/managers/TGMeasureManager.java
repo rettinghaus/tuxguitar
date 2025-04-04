@@ -765,7 +765,7 @@ public class TGMeasureManager {
 			}
 		}
 
-		// Si el movimiento no es satisfactorio, regreso todo como estaba
+		// Si el movimiento no es satisfactorio, regreso TODO: como estaba
 		if(! success ){
 			moveBeats(beatsToMove,-theMove);
 		}

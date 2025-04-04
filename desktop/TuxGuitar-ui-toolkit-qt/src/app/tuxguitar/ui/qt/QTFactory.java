@@ -316,7 +316,7 @@ public class QTFactory implements UIFactory {
 		return this.resourceFactory.createImage(inputStream);
 	}
 	public UIBrowser createBrowser(UIWindow parent) {
-		// TODO QT 5->6 - see commit 24c3ecb1770ae06b9324f167d75147a2cea694f7
+		// TODO: QT 5->6 - see commit 24c3ecb1770ae06b9324f167d75147a2cea694f7
 		return null;
 	}
 }

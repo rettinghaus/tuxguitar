@@ -310,7 +310,7 @@ public abstract class QTWidget<T extends QWidget> extends QTComponent<T> impleme
 	}
 
 	public void openPopupMenu(final UIPosition pos) {
-// TODO QT 5->6 //		if( this.popupMenu != null ) {
+// TODO: QT 5->6 //		if( this.popupMenu != null ) {
 			Runnable runnable = new Runnable() {
 				public void run() {
 					if(!QTWidget.this.isDisposed() && QTWidget.this.popupMenu != null ) {
@@ -318,7 +318,7 @@ public abstract class QTWidget<T extends QWidget> extends QTComponent<T> impleme
 						QTWidget.this.popupMenu.open(new UIPosition(position.x(), position.y()));
 					}
 				}
-// TODO QT 5->6 //		}
+// TODO: QT 5->6 //		}
 		};
 		QMetaObject.invokeMethod(runnable::run, Qt.ConnectionType.QueuedConnection);
 	}

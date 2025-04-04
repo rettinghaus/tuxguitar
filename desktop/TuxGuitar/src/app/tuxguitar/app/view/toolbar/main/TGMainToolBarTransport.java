@@ -205,7 +205,7 @@ public class TGMainToolBarTransport extends TGToolBarModel {
 
 	@Override
 	public void loadProperties(){
-		// TODO tooltiptexts
+		// TODO: tooltiptexts
 	}
 
 	@Override

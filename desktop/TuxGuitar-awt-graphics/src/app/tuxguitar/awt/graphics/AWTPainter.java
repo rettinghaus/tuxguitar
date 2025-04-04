@@ -129,19 +129,19 @@ public class AWTPainter extends AWTAbstractPainter {
 	}
 
 	public void setLineStyleSolid() {
-		// TODO Auto-generated method stub
+		// TODO: Auto-generated method stub
 	}
 
 	public void setLineStyleDot() {
-		// TODO Auto-generated method stub
+		// TODO: Auto-generated method stub
 	}
 
 	public void setLineStyleDash() {
-		// TODO Auto-generated method stub
+		// TODO: Auto-generated method stub
 	}
 
 	public void setLineStyleDashDot() {
-		// TODO Auto-generated method stub
+		// TODO: Auto-generated method stub
 	}
 
 	public void setAlpha(int alpha) {

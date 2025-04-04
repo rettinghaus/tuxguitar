@@ -1,7 +1,7 @@
 /*
  * Created on 23-nov-2005
  *
- * TODO To change the template for this generated file go to
+ * TODO: To change the template for this generated file go to
  * Window - Preferences - Java - Code Style - Code Templates
  */
 package app.tuxguitar.song.models;
@@ -11,7 +11,7 @@ import app.tuxguitar.song.factory.TGFactory;
 /**
  * @author julian
  *
- * TODO To change the template for this generated type comment go to Window - Preferences - Java - Code Style - Code Templates
+ * TODO: To change the template for this generated type comment go to Window - Preferences - Java - Code Style - Code Templates
  */
 public abstract class TGNote implements Comparable<TGNote>{
 	private int value;		// fret number

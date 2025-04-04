@@ -494,7 +494,7 @@ Key Sig     Major   Minor    Mix     Dor     Phr     Lyd     Loc
 	}
 
 	public void setTempo(String string) {
-		// TODO textual tempo's Moderato Largo Allegro, etc. etc.
+		// TODO: textual tempo's Moderato Largo Allegro, etc. etc.
 		ABCTimeSignature beat=parseTimeSignature("1/4");
 		int bpm=120;
 		if(string.trim().matches("[0-9]+"))

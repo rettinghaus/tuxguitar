@@ -133,7 +133,7 @@ public class ABCTrack {
 	}
 
 	public String getDeclaration() {
-		// TODO Auto-generated method stub
+		// TODO: Auto-generated method stub
 		return declaration;
 	}
 

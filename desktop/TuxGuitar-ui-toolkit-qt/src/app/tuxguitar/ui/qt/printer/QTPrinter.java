@@ -33,7 +33,7 @@ public class QTPrinter extends QTComponent<QPrinter> implements UIPrinter {
 
 	public UIRectangle getBounds() {
 		UIRectangle bounds = new UIRectangle();
-		// TODO QT 5->6 - https://stackoverflow.com/questions/47734545/qt-qpainter-in-millimetres-instead-of-inches
+		// TODO: QT 5->6 - https://stackoverflow.com/questions/47734545/qt-qpainter-in-millimetres-instead-of-inches
 		// QRect pageRect = this.getControl().pageRect(QPrinter::Unit::Millimeter);
 		// bounds.getPosition().setX(pageRect.x());
 		// bounds.getPosition().setY(pageRect.y());

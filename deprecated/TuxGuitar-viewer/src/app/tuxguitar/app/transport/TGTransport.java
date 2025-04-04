@@ -1,7 +1,7 @@
 /*
  * Created on 20-mar-2006
  *
- * TODO To change the template for this generated file go to
+ * TODO: To change the template for this generated file go to
  * Window - Preferences - Java - Code Style - Code Templates
  */
 package app.tuxguitar.app.transport;
@@ -19,7 +19,7 @@ import app.tuxguitar.util.TGContext;
 /**
  * @author julian
  *
- * TODO To change the template for this generated type comment go to Window -
+ * TODO: To change the template for this generated type comment go to Window -
  * Preferences - Java - Code Style - Code Templates
  */
 public class TGTransport{
