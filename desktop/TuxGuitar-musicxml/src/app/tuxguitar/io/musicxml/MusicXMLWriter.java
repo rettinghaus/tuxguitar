@@ -566,7 +566,9 @@ public class MusicXMLWriter{
 					if (!isTablature && (trackMgr.isAnyTiedTo(note) || note.isTiedNote())){
 						writeTiedNotations(notationsNode, trackMgr.isAnyTiedTo(note), note.isTiedNote());
 					}
-					writeArticulationNotations(notationsNode, note);
+					if (n==0){
+						writeArticulationNotations(notationsNode, note);
+					}
 					writeTechnicalNotations(notationsNode, note, previousNoteOnString, isTablature);
 					writeOrnamentsNotations(notationsNode, note);
 
