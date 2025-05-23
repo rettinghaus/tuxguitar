@@ -1042,22 +1042,16 @@ public class TGMeasureImpl extends TGMeasure{
 			float height = 0;
 			if((style & TGLayout.DISPLAY_SCORE) != 0 ) {
 				y = getTs().getPosition(TGTrackSpacing.POSITION_SCORE_MIDDLE_LINES);
-				y1 = y;
-				y2 = (y + getTrackImpl().getScoreHeight());
-				height = ((layout.getScoreLineSpacing() * 2f) - layout.getScale());
+				y = y + getTrackImpl().getScoreHeight() / 2;
 			} else if((style & TGLayout.DISPLAY_TABLATURE) != 0 ) {
 				y = getTs().getPosition(TGTrackSpacing.POSITION_TABLATURE);
-				y1 = y;
-				y2 = (y + getTrackImpl().getTabHeight());
-				height = ((layout.getStringSpacing() * 3f) / 2f);
+				y += getTrackImpl().getTabHeight() / 2;
 			}
+			height = ((layout.getScoreLineSpacing() * 2f) - layout.getScale());
+			float yMove = ((((height * 2f) - (y2 - y1)) / 2f));
 
-			if((y2 - y1) < (height * 2f)) {
-				float yMove = ((((height * 2f) - (y2 - y1)) / 2f));
-
-				y1 -= yMove;
-				y2 += yMove;
-			}
+			y1 = y - yMove;
+			y2 = y + yMove;
 
 			float w1 = TGNumberPainter.getDigitsWidth(getTimeSignature().getNumerator(), height);
 			float w2 = TGNumberPainter.getDigitsWidth(getTimeSignature().getDenominator().getValue(), height);
