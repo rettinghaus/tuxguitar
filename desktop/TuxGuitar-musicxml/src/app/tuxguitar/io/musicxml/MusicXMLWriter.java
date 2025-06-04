@@ -693,7 +693,7 @@ public class MusicXMLWriter{
 		}
 
 		if (note.getEffect().isHammer()){
-			Node hammerNode = this.addNode(technicalNode, "hammer-on", "H");
+			Node hammerNode = this.addNode(technicalNode, "hammer-on");
 			this.addAttribute(hammerNode, "type", "start");
 		}
 
