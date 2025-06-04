@@ -689,7 +689,11 @@ public class MusicXMLWriter{
 		// Need to know NEXT note on same string to determine if this note is a HO or a PO, for start tag.
 		if (isTablature){
 			if (previousNoteOnString != null && previousNoteOnString.getEffect().isHammer()){
-				Node hammerNode = this.addNode(technicalNode, "hammer-on");
+				String technique = "hammer-on";
+				if (note.getValue() < previousNoteOnString.getValue()){
+					technique = "pull-off";
+				}
+				Node hammerNode = this.addNode(technicalNode, technique);
 				this.addAttribute(hammerNode, "type", "stop");
 			}
 	
