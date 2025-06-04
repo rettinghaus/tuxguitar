@@ -687,14 +687,16 @@ public class MusicXMLWriter{
 		// https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/pull-off/
 		// Need to know PREV note on same string to determine if last note was HO or PO, for stop tag.
 		// Need to know NEXT note on same string to determine if this note is a HO or a PO, for start tag.
-		if (previousNoteOnString != null && previousNoteOnString.getEffect().isHammer()){
-			Node hammerNode = this.addNode(technicalNode, "hammer-on");
-			this.addAttribute(hammerNode, "type", "stop");
-		}
-
-		if (note.getEffect().isHammer()){
-			Node hammerNode = this.addNode(technicalNode, "hammer-on");
-			this.addAttribute(hammerNode, "type", "start");
+		if (isTablature){
+			if (previousNoteOnString != null && previousNoteOnString.getEffect().isHammer()){
+				Node hammerNode = this.addNode(technicalNode, "hammer-on");
+				this.addAttribute(hammerNode, "type", "stop");
+			}
+	
+			if (note.getEffect().isHammer()){
+				Node hammerNode = this.addNode(technicalNode, "hammer-on");
+				this.addAttribute(hammerNode, "type", "start");
+			}
 		}
 
 		if (note.getEffect().isTapping()){
